@@ -13,3 +13,14 @@ function hide() {
 
 }
 
+function update() {
+    if (window.innerWidth > 1024) {
+        document.querySelector('.nav-narrow').style.display = 'none';
+        console.log(window.innerWidth);
+    }
+}
+
+update();
+window.addEventListener("resize", update);
+
+
