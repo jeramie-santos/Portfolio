@@ -194,7 +194,7 @@ nav {
 
 @media (max-width: 1280px) {
     body {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 1024px;
         margin-left: auto;
         margin-right: auto;
@@ -208,7 +208,7 @@ nav {
 
 @media (max-width: 1024px) {
     body {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 768px;
         margin-left: auto;
         margin-right: auto;
@@ -256,7 +256,7 @@ nav {
 
 @media (max-width: 768px) {
     body {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         width: 640px;
         margin-left: auto;
         margin-right: auto;
@@ -287,5 +287,49 @@ nav {
     .about-section {
         /* border: 1px solid red; */
         flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 640px) {
+    body {
+        /* border: 1px solid red; */
+        width: 576px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        border: 1px solid red;
+        width: 475px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-me {
+        /* border: 1px solid red; */
+        width: 475px;
+        padding: 2rem;
+    }
+
+    .nav-narrow {
+        width: 475px;
+    }
+
+    .about-stack {
+        width: 100px;
+    }
+
+    .card {
+        width: 5rem;
+        height: 5rem;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 475px) {
+    nav {
+        padding-inline: 2rem;
     }
 }
