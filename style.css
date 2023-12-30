@@ -194,22 +194,21 @@ nav {
 
 @media (max-width: 1280px) {
     body {
+        border: 1px solid red;
         width: 1024px;
         margin-left: auto;
         margin-right: auto;
-        /* border: 1px solid red; */
     }
 
     .nav-narrow {
         display: none;
-        background-color: blue;
     }
 }
 
 
 @media (max-width: 1024px) {
     body {
-        /* border: 1px solid red; */
+        border: 1px solid red;
         width: 768px;
         margin-left: auto;
         margin-right: auto;
@@ -257,6 +256,7 @@ nav {
 
 @media (max-width: 768px) {
     body {
+        border: 1px solid red;
         width: 640px;
         margin-left: auto;
         margin-right: auto;
@@ -265,6 +265,10 @@ nav {
     nav {
         /* border: 1px solid red; */
         padding: 0;
+    }
+
+    .nav-narrow {
+        width: 640px;
     }
 
     .hero {

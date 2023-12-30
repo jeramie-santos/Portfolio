@@ -17,6 +17,9 @@ function update() {
     if (window.innerWidth > 1024) {
         document.querySelector('.nav-narrow').style.display = 'none';
         console.log(window.innerWidth);
+    } else {
+        document.querySelector('.fa-bars').style.display = 'block';
+        document.querySelector('.fa-xmark').style.display = 'none';
     }
 }
 
