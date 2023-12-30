@@ -20,16 +20,17 @@
             </ul>
         </div>
         <div class="nav-hamburger">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="show()"></i>
+            <i class="fa-solid fa-xmark" onclick="hide()"></i>
         </div>
     </nav>
     <div class="nav-narrow">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
+            <li><a href="#about" onclick="hide()">About</a></li>
+            <li><a href="#skills" onclick="hide()">Skills</a></li>
+            <li><a href="#education" onclick="hide()">Education</a></li>
         </ul>
     </div>
-    
+    <script src="main.js"></script>
 </body>
 </html>

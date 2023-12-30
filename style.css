@@ -58,6 +58,10 @@ nav {
     display: none;
 }
 
+.nav-hamburger .fa-xmark {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     /* body {
         max-width: 1200px;
