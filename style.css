@@ -136,7 +136,6 @@ nav {
 .about-me {
     height: 100vh;
     color: black;
-    text-align: center;
     padding: 2rem;
 }
 
@@ -145,6 +144,7 @@ nav {
     align-items: center;
     justify-content: center;
     height: 10%;
+    text-align: center;
 }
 
 .about-section {
@@ -177,18 +177,100 @@ nav {
     justify-content: center;
 }
 
-
-
 .card {
     width: 10rem;
     height: 10rem;
     font-size: 5rem;
     border-radius: .8rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 100, 0.20);
+    border: 1px solid black;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 100, 0.20); */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.skill-education {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100vh;
+}
+
+.skills {
+    flex: 1;
+
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 1rem;
+}
+
+.skill-bottom,
+.skill-top {
+    display: flex;
+    gap: 1rem;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skill-card {
+    background-color: black;
+    color: white;
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education {
+    flex: 1;
+    background-color: black;
+    border-radius: 5rem 0 0;
+}
+
+.education h2 {
+    color: white;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    /* border: 1px solid blue; */
+    gap: 2rem;
+}
+
+.education-card {
+    display: flex;
+    width: 85%;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 100, 0.20);
+    padding: 1rem;
+    background-color: white;
+}
+
+.education-card img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+}
+
+
+
+
 
 @media (max-width: 1280px) {
     body {
