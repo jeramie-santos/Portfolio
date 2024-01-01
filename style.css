@@ -147,6 +147,10 @@ nav {
     text-align: center;
 }
 
+.narrow-headers {
+    display: none;
+}
+
 .about-section {
     display: flex;
     gap: 1rem;
@@ -309,7 +313,7 @@ footer {
     }
 
     nav {
-        padding: 0;
+        padding-inline: 2rem;
     }
 
     .nav-link {
@@ -345,6 +349,19 @@ footer {
         flex-direction: column;
     }
 
+    .skill {
+        margin-bottom: 2rem;
+    }
+
+    .education-container {
+        flex-direction: column;
+    }
+
+    .education-card {
+        flex-direction: row;
+        width: 50vh;
+    }
+
 
 }
 
@@ -354,11 +371,6 @@ footer {
         width: 640px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-    nav {
-        /* border: 1px solid red; */
-        padding: 0;
     }
 
     .nav-narrow {
@@ -419,7 +431,78 @@ footer {
 }
 
 @media (max-width: 475px) {
-    nav {
-        padding-inline: 2rem;
+    body {
+        width: 475px;
     }
+
+    nav {
+        height: 15vh;
+    }
+
+    .hero {
+        height: 100vh;
+        padding-block: 2rem;
+        gap: 8rem;
+        justify-content: start;
+    }
+
+    .about-me {
+        font-size: .8rem;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .about-stack {
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%;
+    }
+
+    .education-card {
+        width: 80%;
+    }
+
+    .wide {
+        display: none;
+    }
+
+    .narrow-headers {
+        display: block;
+
+    }
+
+    .education {
+        border-radius: 3rem 3rem 0 0;
+        height: 65vh;
+    }
+
+    .education-container {
+        height: 50%;
+        margin-top: 4rem;
+    }
+
+    .education-card {
+        font-size: .8rem;
+    }
+
+    .contact-me {
+        height: 50vh;
+    }
+
+    .contact-details {
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    footer {
+
+        height: 10vh;
+    }
+
+
+
+
 }
