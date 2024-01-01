@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
 }
 
 html {
@@ -190,13 +191,10 @@ nav {
     font-size: 2rem;
 }
 
-/* 
-///////////////////////////////////////////////////////////////// */
-
 .education {
     flex: 1;
     background-color: black;
-    border-radius: 3rem 3rem 0 0;
+    border-radius: 7rem 7rem 0 0;
     height: 100vh;
 }
 
@@ -206,7 +204,6 @@ nav {
 
 .education-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -215,13 +212,22 @@ nav {
 
 .education-card {
     display: flex;
-    width: 50%;
+    width: 30%;
+    height: 60%;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px rgba(0, 0, 100, 0.20);
     padding: 1rem;
     background-color: white;
+    text-align: center;
+}
+
+.education-card:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
 }
 
 .education-card img {
@@ -229,6 +235,52 @@ nav {
     height: 6rem;
     border-radius: 1rem;
 }
+
+.contact-me {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.contact-card .fa-solid {
+    font-size: 1.5rem;
+}
+
+.contact-details:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
 
@@ -290,7 +342,7 @@ nav {
     }
 
     .about-section {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
 
@@ -326,10 +378,6 @@ nav {
         /* border: 1px solid red; */
     }
 
-    .about-section {
-        /* border: 1px solid red; */
-        flex-direction: column-reverse;
-    }
 }
 
 @media (max-width: 640px) {
