@@ -25,5 +25,3 @@ function update() {
 
 update();
 window.addEventListener("resize", update);
-
-

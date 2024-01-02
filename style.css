@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+
 }
 
 html {
@@ -137,6 +137,7 @@ nav {
 .about-me {
     height: 100vh;
     color: black;
+    margin-bottom: 1rem;
 }
 
 .section-headers {
@@ -145,10 +146,6 @@ nav {
     justify-content: center;
     height: 15vh;
     text-align: center;
-}
-
-.narrow-headers {
-    display: none;
 }
 
 .about-section {
@@ -162,6 +159,15 @@ nav {
 
 .about-details {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem
+}
+
+.about-details p {
+    text-align: justify;
 }
 
 .skill {
@@ -198,8 +204,8 @@ nav {
 .education {
     flex: 1;
     background-color: black;
-    border-radius: 7rem 7rem 0 0;
-    height: 100vh;
+    border-radius: 3rem 3rem 0 0;
+    height: 80vh;
 }
 
 .education h2 {
@@ -227,6 +233,7 @@ nav {
     background-color: white;
     text-align: center;
 }
+
 
 .education-card:hover {
     background-color: black;
@@ -287,12 +294,9 @@ footer {
 
 
 
-
-
-
 @media (max-width: 1280px) {
     body {
-        /* border: 1px solid red; */
+
         width: 1024px;
         margin-left: auto;
         margin-right: auto;
@@ -306,14 +310,16 @@ footer {
 
 @media (max-width: 1024px) {
     body {
-        /* border: 1px solid red; */
+
         width: 768px;
         margin-left: auto;
         margin-right: auto;
+        font-size: .7rem;
     }
 
     nav {
         padding-inline: 2rem;
+        height: 15vh;
     }
 
     .nav-link {
@@ -341,8 +347,19 @@ footer {
 
     }
 
+    .profile-img {
+        width: 20rem;
+    }
+
     .hero {
         flex-direction: column-reverse;
+        height: 85vh;
+        gap: 2rem;
+    }
+
+    .about-me {
+
+        height: 100vh;
     }
 
     .about-section {
@@ -360,6 +377,11 @@ footer {
     .education-card {
         flex-direction: row;
         width: 50vh;
+        justify-content: left;
+    }
+
+    .school {
+        text-align: start;
     }
 
 
@@ -367,7 +389,7 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        /* border: 1px solid red; */
+
         width: 640px;
         margin-left: auto;
         margin-right: auto;
@@ -378,7 +400,7 @@ footer {
     }
 
     .hero {
-        /* border: 1px solid red; */
+
         flex-direction: column-reverse;
     }
 
@@ -386,41 +408,47 @@ footer {
         width: 20rem;
     }
 
-    .about-me {
-        /* border: 1px solid red; */
-    }
+    /* .about-me {
+        border: 1px solid red;
+    } */
 
 }
 
 @media (max-width: 640px) {
     body {
-        /* border: 1px solid red; */
+
         width: 576px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .nav-narrow {
+        width: 576px;
+    }
+
+    .nav-narrow ul {
+        font-size: 1.5rem;
+    }
+
+    .about-me {
+        margin-bottom: 2rem;
+    }
+
+    .about-stack {
+        padding: 2rem;
     }
 }
 
 @media (max-width: 576px) {
     body {
-        /* border: 1px solid red; */
+
         width: 475px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .about-me {
-        /* border: 1px solid red; */
-        width: 475px;
-        padding: 2rem;
-    }
-
     .nav-narrow {
         width: 475px;
-    }
-
-    .about-stack {
-        width: 100px;
     }
 
     .card {
@@ -433,6 +461,11 @@ footer {
 @media (max-width: 475px) {
     body {
         width: 475px;
+        font-size: .65rem;
+    }
+
+    .nav-narrow {
+        width: 475px;
     }
 
     nav {
@@ -440,23 +473,37 @@ footer {
     }
 
     .hero {
-        height: 100vh;
+        height: 85vh;
         padding-block: 2rem;
-        gap: 8rem;
+        gap: 2rem;
         justify-content: start;
     }
 
+    .profile-img {
+        width: 18rem;
+    }
+
     .about-me {
-        font-size: .8rem;
         height: 100vh;
         display: flex;
         flex-direction: column;
+        gap: 1rem;
+    }
 
+    .section-headers {
+        height: 10vh;
+    }
+
+
+    .about-details,
+    .skill {
+        flex: 0;
     }
 
 
     .about-stack {
-        flex-direction: column;
+        /* flex-direction: column; */
+
         gap: .5rem;
         width: 100%;
     }
@@ -465,27 +512,14 @@ footer {
         width: 80%;
     }
 
-    .wide {
-        display: none;
-    }
-
-    .narrow-headers {
-        display: block;
-
-    }
-
     .education {
         border-radius: 3rem 3rem 0 0;
-        height: 65vh;
+        height: 85vh;
     }
 
     .education-container {
         height: 50%;
         margin-top: 4rem;
-    }
-
-    .education-card {
-        font-size: .8rem;
     }
 
     .contact-me {
@@ -494,7 +528,6 @@ footer {
 
     .contact-details {
         width: 100%;
-        font-size: .8rem;
     }
 
     footer {
@@ -502,7 +535,30 @@ footer {
         height: 10vh;
     }
 
+}
 
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .6rem;
+    }
 
+    .nav-narrow {
+        width: 100%;
+    }
 
+    .nav-narrow ul {
+        font-size: 1.5rem;
+    }
+
+    .contact-details {
+        width: 95%;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+    }
 }
