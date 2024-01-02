@@ -302,6 +302,10 @@ footer {
         margin-right: auto;
     }
 
+    button {
+        font-size: ;
+    }
+
     .nav-narrow {
         display: none;
     }
@@ -314,6 +318,10 @@ footer {
         width: 768px;
         margin-left: auto;
         margin-right: auto;
+        font-size: .7rem;
+    }
+
+    button {
         font-size: .7rem;
     }
 
@@ -464,6 +472,10 @@ footer {
         font-size: .65rem;
     }
 
+    button {
+        font-size: .65rem;
+    }
+
     .nav-narrow {
         width: 475px;
     }
@@ -542,6 +554,10 @@ footer {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        font-size: .6rem;
+    }
+
+    button {
         font-size: .6rem;
     }
 
